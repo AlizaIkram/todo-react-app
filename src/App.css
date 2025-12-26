@@ -1,0 +1,125 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Page background */
+body {
+  background-color: #ccd6e9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.todo-container {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+.todo-heading {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #6c7cff; /* pastel blue */
+}
+
+/* Input section */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-area input:focus {
+  border-color: #b5c7ff;
+}
+
+/* Add button */
+.add-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: #b5c7ff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn:hover {
+  background-color: #9fb4ff;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Todo item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background-color: #f2f4ff;
+  transition: background 0.2s ease;
+}
+
+.todo-item:hover {
+  background-color: #e8ecff;
+}
+
+.todo-item span {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Action buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Icon colors */
+.actions button:nth-child(1) {
+  color: #6c7cff; /* edit */
+}
+
+.actions button:nth-child(2) {
+  color: #f5a7a7; /* delete */
+}
