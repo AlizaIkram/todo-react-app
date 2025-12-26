@@ -1,4 +1,4 @@
-import { InputForm } from "./InputForm";
+import { InputForm } from "./InputForm.jsx";
 
 function App() {
   return (
